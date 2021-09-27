@@ -1,20 +1,21 @@
 # Safety Score
 
-
 Tesla-style safety score for CARLA using ROS.
-https://www.tesla.com/support/safety-score
 
+See: https://www.tesla.com/support/safety-score
 
-
-TODO: 
+Done:
 - Longitudinal Acceleration
 - Lateral Acceleration
-- FCW
 - Unsafe Following
+- FCW
+
+TODO: 
  - UI
+ - Statistics
 
-
- launch order is important
+Notes:
+launch order is important
  - sim
  - manual control
  - generate traffic
