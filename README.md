@@ -10,9 +10,10 @@ Done:
 - Unsafe Following
 - FCW
 
-TODO: 
- - UI
- - Statistics
+TODO:
+- Forced Autopilot Disengagement
+- UI
+- Statistics
 
 Notes:
 launch order is important

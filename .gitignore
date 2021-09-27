@@ -1,3 +1,4 @@
 .vscode/*
 *.pyc
-*/data/*
+*/**/data/*
+safety_score/src/data/2021-09-27-18-57-32.bag
