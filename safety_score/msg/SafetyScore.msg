@@ -5,3 +5,5 @@ float32 linear_acceleration_y
 float32 average_distance
 float32 time_to_collision
 bool forward_collision_warning
+bool autopilot_enabled
+bool forced_disengagement

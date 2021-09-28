@@ -7,14 +7,8 @@ from sensor_msgs.msg import Imu, Image, CompressedImage
 from safety_score.msg import SafetyScore
 
 import numpy as np
+from utils import *
 
-ACCEL_GRAVITY = 9.81
-LATERAL_ACCEL_THRESHOLD = 0.4 * ACCEL_GRAVITY
-LATERAL_ACCEL_BASELINE = 0.2 * ACCEL_GRAVITY
-LONGITUDINAL_ACCEL_THRESHOLD = 0.3 * ACCEL_GRAVITY
-LONGITUDINAL_ACCEL_BASELINE = 0.1 * ACCEL_GRAVITY
-UNSAFE_FOLLOWING_THRESHOLD = 1.0
-UNSAFE_FOLLOWING_BASELINE = 3.0
 
 class SafetyScoreNode(object):
 
@@ -104,4 +98,4 @@ if __name__ == "__main__":
 
     rospy.spin()
 
-    
+# TODO: add distance travelled to msg
