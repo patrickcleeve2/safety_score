@@ -1,6 +1,6 @@
 <launch>
     <!-- launch carla_ros_bridge  -->
-    <include file="$(find safety_score)/launch/carla_ros_bridge_with_example_ego_vehicle.launch" />
+    <!-- <include file="$(find safety_score)/launch/carla_ros_bridge_with_example_ego_vehicle_demo.launch" /> -->
     
     <!-- launch compressed image transport -->
     <node name="compressed_transport_0" pkg="image_transport" type="republish" args="raw in:=/carla/hero/camera/rgb/front/image_color compressed out:=/carla/hero/camera/rgb/front/image_color" />
@@ -8,4 +8,7 @@
 
     <!-- launch safety score -->
     <node name="safety_score_node" pkg="safety_score" type="safety_score_node.py" />
+    
+    <!-- launch safety score ui -->
+    <node name="safety_score_ui" pkg="safety_score" type="safety_score_ui.py" output="screen" />
 </launch>
