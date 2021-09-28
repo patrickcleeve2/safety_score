@@ -1,11 +1,13 @@
 # Safety Score
 
-Tesla-style safety score for CARLA using ROS.
+Tesla-style safety score for CARLA using ROS. 
+
+### [Demo Video](https://youtu.be/rR374mPwH2g)
+
 
 ![safety_score](safety_score/img/safety_score2.png)
 
 This node calculates the safety score components using the vehicle's IMU, and Radar. For the full safety score calculation please see: https://www.tesla.com/support/safety-score
-
 
 ## Getting Started
 You will need CARLA and carla_ros_bridge installed.
