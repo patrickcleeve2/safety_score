@@ -58,6 +58,7 @@ class SafetyScoreNode(object):
             self.fcw = False
 
         self.publish_safety_score()
+        # TODO: move the actual calculation here instead of external...
 
 
     def imu_callback(self, msg):
@@ -76,7 +77,7 @@ class SafetyScoreNode(object):
         self.linear_acceleration_y = msg.linear_acceleration.y
 
     def publish_safety_score(self):
-
+        
         msg = SafetyScore()
         msg.header.stamp = rospy.Time.now()
         msg.velocity = self.velocity

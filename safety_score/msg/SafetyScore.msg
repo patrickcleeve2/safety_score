@@ -7,3 +7,5 @@ float32 time_to_collision
 bool forward_collision_warning
 bool autopilot_enabled
 bool forced_disengagement
+float32 predicted_collision_frequency
+float32 safety_score 

@@ -55,7 +55,6 @@ class SafetyScoreUI(QMainWindow):
     def refresh_layout(self):
 
         self.vbox = QVBoxLayout()
-        # self.vbox.addStretch(0)
         header_label = QLabel()
         header_label.setText("CARLA Safety Score")
         header_label.setStyleSheet("color: white")
@@ -169,7 +168,7 @@ class SafetyScoreUI(QMainWindow):
         rospy.loginfo(f"Safety Score: {self.safety_score:.2f}")
         rospy.loginfo("-" * 50)
         
-        # self.refresh_layout()
+        # TODO: republish the safety score to ROS
 
 
 def main():
@@ -179,7 +178,7 @@ def main():
 
     timer = QTimer()
     timer.timeout.connect(safety_score_ui.refresh_layout)
-    timer.start(1000)
+    timer.start(1000) #ms
 
     sys.exit(app.exec_()) 
 
